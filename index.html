@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,400italic,300,300italic,700,700italic%7CKulim+Park:300,300italic,400,400italic"
+    rel="stylesheet" type="text/css" />
+
+  <!-- Bootstrap CSS File -->
+  <!-- <link href="./src/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+
+  <!-- AOS CSS File -->
+  <!-- <link href="./src/aos/css/aos.css" rel="stylesheet" /> -->
+
+  <!-- Libraries CSS Files -->
+  <!-- <link href="./src/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> -->
+
+  <link href="./css/style.css" rel="stylesheet" />
+  <noscript>
+    <style>
+      body {
+        overflow: auto !important;
+      }
+
+      body:after {
+        display: none !important;
+      }
+
+      #main>.inner {
+        opacity: 1 !important;
+      }
+
+      #main {
+        opacity: 1 !important;
+        -moz-transform: none !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+        -moz-filter: none !important;
+        -webkit-filter: none !important;
+        -ms-filter: none !important;
+        filter: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body class="is-loading">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40"
+    display="none" width="0" height="0">
+    <symbol id="home-icon" viewBox="0 0 40 40">
+      <path
+        d="M33.3,22.3v11.2c0,0.4-0.1,0.8-0.4,1.1c-0.3,0.3-0.6,0.4-1.1,0.4h-9v-9h-6v9h-9c-0.4,0-0.8-0.1-1.1-0.4 c-0.3-0.3-0.4-0.6-0.4-1.1V22.3c0,0,0,0,0-0.1s0-0.1,0-0.1L19.9,11l13.5,11.1C33.3,22.1,33.3,22.2,33.3,22.3L33.3,22.3z M38.5,20.6 l-1.5,1.7c-0.1,0.1-0.3,0.2-0.5,0.3h-0.1c-0.2,0-0.4-0.1-0.5-0.2L19.9,9L3.7,22.5c-0.2,0.1-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.5-0.3 l-1.5-1.7C1,20.5,1,20.3,1,20.1s0.1-0.4,0.3-0.5l16.8-14C18.6,5.2,19.2,5,19.9,5s1.3,0.2,1.8,0.6l5.7,4.8V5.8c0-0.2,0.1-0.4,0.2-0.5 S27.9,5,28.1,5h4.5c0.2,0,0.4,0.1,0.5,0.2c0.1,0.1,0.2,0.3,0.2,0.5v9.5l5.1,4.3c0.2,0.1,0.2,0.3,0.3,0.5 C38.7,20.3,38.7,20.5,38.5,20.6L38.5,20.6z" />
+    </symbol>
+    <symbol id="github-icon" viewBox="0 0 40 40">
+      <path
+        d="M36,20.3c0,3.5-1,6.6-3.1,9.4c-2,2.8-4.7,4.7-7.9,5.8c-0.4,0.1-0.6,0-0.8-0.1c-0.2-0.2-0.3-0.4-0.3-0.6v-4.4 c0-1.3-0.4-2.3-1.1-3c0.8-0.1,1.5-0.2,2.1-0.4c0.6-0.2,1.3-0.4,2-0.8c0.7-0.4,1.2-0.8,1.7-1.4c0.5-0.5,0.8-1.3,1.1-2.2 s0.4-2,0.4-3.1c0-1.7-0.5-3.1-1.6-4.3c0.5-1.3,0.5-2.7-0.2-4.2c-0.4-0.1-1,0-1.7,0.2c-0.7,0.3-1.4,0.6-1.9,0.9L24,12.5 c-1.3-0.4-2.6-0.5-4-0.5s-2.7,0.2-4,0.5c-0.2-0.2-0.5-0.3-0.9-0.6c-0.4-0.2-0.9-0.5-1.7-0.8c-0.8-0.3-1.4-0.4-1.8-0.3 c-0.6,1.6-0.7,3-0.1,4.2c-1.1,1.2-1.6,2.6-1.6,4.3c0,1.2,0.1,2.2,0.4,3.1s0.6,1.6,1.1,2.2s1,1,1.7,1.4c0.7,0.4,1.3,0.6,2,0.8 c0.6,0.2,1.3,0.3,2.1,0.4c-0.6,0.5-0.9,1.2-1,2.1c-0.3,0.1-0.6,0.2-0.9,0.3c-0.3,0.1-0.7,0.1-1.2,0.1c-0.5,0-0.9-0.1-1.4-0.4 c-0.5-0.3-0.8-0.7-1.2-1.3c-0.3-0.4-0.6-0.8-1-1.1c-0.4-0.3-0.8-0.4-1-0.5L9,26.5c-0.3,0-0.5,0-0.6,0.1c-0.1,0.1-0.1,0.1-0.1,0.2 c0,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.2,0.2,0.3,0.2l0.1,0.1c0.3,0.1,0.6,0.4,0.9,0.8s0.5,0.7,0.7,1.1l0.2,0.5c0.2,0.5,0.5,1,0.9,1.3 c0.4,0.3,0.9,0.5,1.4,0.6c0.5,0.1,1,0.1,1.4,0.1c0.5,0,0.9,0,1.2-0.1l0.5-0.1c0,0.5,0,1.1,0,1.9c0,0.7,0,1.1,0,1.1 c0,0.2-0.1,0.5-0.3,0.6c-0.2,0.2-0.5,0.2-0.8,0.1c-3.2-1.1-5.8-3-7.9-5.8S4,23.8,4,20.3c0-2.9,0.7-5.6,2.1-8S9.5,7.8,12,6.4 s5.1-2.1,8-2.1s5.6,0.7,8,2.1s4.4,3.4,5.8,5.8S36,17.4,36,20.3L36,20.3z" />
+    </symbol>
+    <symbol id="instagram-icon" viewBox="0 0 40 40">
+      <path
+        d="M20,7c4.2,0,4.7,0,6.3,0.1c1.5,0.1,2.3,0.3,3,0.5C30,8,30.5,8.3,31.1,8.9c0.5,0.5,0.9,1.1,1.2,1.8c0.2,0.5,0.5,1.4,0.5,3 C33,15.3,33,15.8,33,20s0,4.7-0.1,6.3c-0.1,1.5-0.3,2.3-0.5,3c-0.3,0.7-0.6,1.2-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2 c-0.5,0.2-1.4,0.5-3,0.5C24.7,33,24.2,33,20,33s-4.7,0-6.3-0.1c-1.5-0.1-2.3-0.3-3-0.5C10,32,9.5,31.7,8.9,31.1 C8.4,30.6,8,30,7.7,29.3c-0.2-0.5-0.5-1.4-0.5-3C7,24.7,7,24.2,7,20s0-4.7,0.1-6.3c0.1-1.5,0.3-2.3,0.5-3C8,10,8.3,9.5,8.9,8.9 C9.4,8.4,10,8,10.7,7.7c0.5-0.2,1.4-0.5,3-0.5C15.3,7.1,15.8,7,20,7z M20,4.3c-4.3,0-4.8,0-6.5,0.1c-1.6,0-2.8,0.3-3.8,0.7 C8.7,5.5,7.8,6,6.9,6.9C6,7.8,5.5,8.7,5.1,9.7c-0.4,1-0.6,2.1-0.7,3.8c-0.1,1.7-0.1,2.2-0.1,6.5s0,4.8,0.1,6.5 c0,1.6,0.3,2.8,0.7,3.8c0.4,1,0.9,1.9,1.8,2.8c0.9,0.9,1.7,1.4,2.8,1.8c1,0.4,2.1,0.6,3.8,0.7c1.6,0.1,2.2,0.1,6.5,0.1 s4.8,0,6.5-0.1c1.6-0.1,2.9-0.3,3.8-0.7c1-0.4,1.9-0.9,2.8-1.8c0.9-0.9,1.4-1.7,1.8-2.8c0.4-1,0.6-2.1,0.7-3.8 c0.1-1.6,0.1-2.2,0.1-6.5s0-4.8-0.1-6.5c-0.1-1.6-0.3-2.9-0.7-3.8c-0.4-1-0.9-1.9-1.8-2.8c-0.9-0.9-1.7-1.4-2.8-1.8 c-1-0.4-2.1-0.6-3.8-0.7C24.8,4.3,24.3,4.3,20,4.3L20,4.3L20,4.3z" />
+      <path
+        d="M20,11.9c-4.5,0-8.1,3.7-8.1,8.1s3.7,8.1,8.1,8.1s8.1-3.7,8.1-8.1S24.5,11.9,20,11.9z M20,25.2c-2.9,0-5.2-2.3-5.2-5.2 s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S22.9,25.2,20,25.2z" />
+      <path d="M30.6,11.6c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9C29.8,9.7,30.6,10.5,30.6,11.6z" />
+    </symbol>
+    <symbol id="soundcloud-icon" viewBox="0 0 40 40">
+      <path
+        d="M13.8,27.4l0.3-4.2L13.8,14c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.3-0.1c-0.1,0-0.2,0-0.3,0.1C13.1,13.8,13,13.9,13,14 l-0.2,9.2l0.2,4.2c0,0.1,0.1,0.2,0.1,0.3c0.1,0.1,0.2,0.1,0.3,0.1C13.7,27.8,13.8,27.7,13.8,27.4z M18.8,26.9l0.2-3.7l-0.2-10.3 c0-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.2-0.1-0.3-0.1s-0.2,0-0.3,0.1c-0.1,0.1-0.2,0.2-0.2,0.4l0,0.1l-0.2,10.1c0,0,0.1,1.4,0.2,4.1v0 c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.2-0.1,0.3-0.2c0.1-0.1,0.2-0.2,0.2-0.4L18.8,26.9z M1.2,20.9l0.3,2.2 l-0.3,2.2c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.1-0.1-0.2-0.2l-0.3-2.2l0.3-2.2c0-0.1,0.1-0.2,0.2-0.2S1.2,20.8,1.2,20.9z M2.7,19.5 l0.4,3.6l-0.4,3.6c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.2-0.1-0.2-0.2L2,23.2l0.4-3.6c0-0.1,0.1-0.2,0.2-0.2C2.6,19.4,2.7,19.4,2.7,19.5z M4.2,18.9l0.4,4.3l-0.4,4.2c0,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.2-0.1-0.2-0.2l-0.4-4.2l0.4-4.3c0-0.1,0.1-0.2,0.2-0.2 C4.2,18.7,4.2,18.7,4.2,18.9z M5.8,18.8l0.4,4.4l-0.4,4.3c0,0.2-0.1,0.2-0.2,0.2c-0.1,0-0.2-0.1-0.2-0.2L5,23.2l0.4-4.4 c0-0.2,0.1-0.2,0.2-0.2C5.7,18.5,5.8,18.6,5.8,18.8z M7.4,19.1l0.4,4.1l-0.4,4.3c0,0.2-0.1,0.3-0.3,0.3c-0.1,0-0.1,0-0.2-0.1 c-0.1-0.1-0.1-0.1-0.1-0.2l-0.3-4.3l0.3-4.1c0-0.1,0-0.1,0.1-0.2C7,18.8,7,18.8,7.1,18.8C7.3,18.8,7.4,18.9,7.4,19.1L7.4,19.1z M9,16.5l0.4,6.7L9,27.5c0,0.1,0,0.2-0.1,0.2c-0.1,0.1-0.1,0.1-0.2,0.1c-0.2,0-0.3-0.1-0.3-0.3l-0.3-4.3l0.3-6.7 c0-0.2,0.1-0.3,0.3-0.3c0.1,0,0.1,0,0.2,0.1S9,16.4,9,16.5z M10.5,15l0.3,8.2l-0.3,4.3c0,0.1,0,0.2-0.1,0.2 c-0.1,0.1-0.1,0.1-0.2,0.1c-0.2,0-0.3-0.1-0.3-0.3l-0.3-4.3L9.9,15c0-0.2,0.1-0.3,0.3-0.3c0.1,0,0.2,0,0.2,0.1 C10.5,14.8,10.5,14.9,10.5,15z M12.2,14.3l0.3,8.9l-0.3,4.2c0,0.2-0.1,0.4-0.4,0.4c-0.2,0-0.3-0.1-0.4-0.4l-0.3-4.2l0.3-8.9 c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.1,0.2-0.1c0.1,0,0.2,0,0.3,0.1C12.1,14.1,12.2,14.2,12.2,14.3z M18.8,27.3L18.8,27.3L18.8,27.3z M15.4,14.2l0.3,8.9l-0.3,4.2c0,0.1,0,0.2-0.1,0.3c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3-0.1s-0.1-0.2-0.1-0.3l-0.2-4.2 l0.2-8.9c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1C15.4,14,15.4,14.1,15.4,14.2L15.4,14.2z M17.1,14.6 l0.2,8.6l-0.2,4.1c0,0.1,0,0.2-0.1,0.3c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3-0.1c-0.1-0.1-0.1-0.2-0.2-0.3L16,23.2l0.2-8.6 c0-0.1,0.1-0.3,0.2-0.4c0.1-0.1,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1C17.1,14.3,17.1,14.4,17.1,14.6z M20.7,23.2l-0.2,4 c0,0.2-0.1,0.3-0.2,0.4c-0.1,0.1-0.2,0.2-0.4,0.2c-0.1,0-0.3-0.1-0.4-0.2c-0.1-0.1-0.2-0.2-0.2-0.4l-0.1-2l-0.1-2L19.4,12V12 c0-0.2,0.1-0.3,0.2-0.4c0.1-0.1,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1c0.2,0.1,0.2,0.2,0.3,0.5L20.7,23.2z M39.4,22.9 c0,1.4-0.5,2.5-1.4,3.5c-0.9,1-2,1.4-3.4,1.4H21.4c-0.1,0-0.3-0.1-0.4-0.2c-0.1-0.1-0.2-0.2-0.2-0.4V11.5c0-0.3,0.2-0.5,0.5-0.6 c1-0.4,2-0.6,3-0.6c2.2,0,4.1,0.8,5.7,2.3c1.6,1.5,2.5,3.4,2.7,5.7c0.6-0.3,1.2-0.4,1.8-0.4c1.3,0,2.4,0.5,3.4,1.5 C38.9,20.3,39.4,21.5,39.4,22.9L39.4,22.9z" />
+    </symbol>
+    <symbol id="twitter-icon" viewBox="0 0 40 40">
+      <path
+        d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z" />
+    </symbol>
+    <symbol id="youtube-icon" viewBox="0 0 512 512">
+      <path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0" />
+      <path
+        d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0" />
+    </symbol>
+  </svg>
+  <div id="wrapper">
+    <div id="main">
+      <div class="inner">
+        <section id="home-section">
+          <div id="briefIntro_column" class="container columns">
+            <div class="wrapper">
+              <div class="inner">
+                <div>
+                  <h1 id="text01">
+                    <span style="color: #c7e9ff"><strong>ThinnhNggN</strong></span>
+                  </h1>
+                  <p id="text02">
+                    <span style="color: #daecf7"><em>22 | 12.12 | ♂ (He/Him) | 🇻🇳 🌈</em></span>
+                  </p>
+                  <ul id="iconsStyle" class="icons">
+                    <li>
+                      <a class="n01" href="https://twitter.com/thinnhnggn"><svg>
+                          <use xlink:href="#twitter-icon"></use>
+                        </svg><span class="label">Twitter</span></a>
+                    </li>
+                    <li>
+                      <a class="n02" href="https://www.instagram.com/thinnhnggn/"><svg>
+                          <use xlink:href="#instagram-icon"></use>
+                        </svg><span class="label">Instagram</span></a>
+                    </li>
+                    <li>
+                      <a class="n03" href="https://soundcloud.com/thinh-nguyen-764494794"><svg>
+                          <use xlink:href="#soundcloud-icon"></use>
+                        </svg><span class="label">SoundCloud</span></a>
+                    </li>
+                    <li>
+                      <a class="n04" href="https://www.youtube.com/channel/UC8JqeKMGNZ7-DsSYjUjUO2g"><svg>
+                          <use xlink:href="#youtube-icon"></use>
+                        </svg><span class="label">YouTube</span></a>
+                    </li>
+                    <li>
+                      <a class="n05" href="https://github.com/phucthinh12121999"><svg>
+                          <use xlink:href="#github-icon"></use>
+                        </svg><span class="label">GitHub</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div id="image01" class="image">
+                    <img src="./img/cute_1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="container01" class="container columns">
+            <div class="wrapper">
+              <div class="inner">
+                <div>
+                  <ul id="buttons01" class="buttons">
+                    <li><a href="#about" class="button n01">About</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul id="buttons02" class="style1 buttons">
+                    <li>
+                      <a href="#interest" class="button n01">Interest</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul id="buttons03" class="style1 buttons">
+                    <li><a href="#works" class="button n01">My works</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about-section">
+          <div id="container02" class="container default">
+            <div class="wrapper">
+              <div class="inner">
+                <h2 id="text09">
+                  <span style="color: #c7e9ff"><strong>About Me</strong></span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <hr id="dividerStyle" />
+          <div id="container03" class="container default">
+            <div class="wrapper">
+              <div class="inner">
+                <p id="text04">
+                  <span>Hi, I&#39;m <strong>ThinnhNggN</strong>, called me
+                    <strong>Thinnh</strong>.</span><br />
+                  <br />
+                  <span>I&#39;m 22+ (born in 99) from 🇻🇳</span><br />
+                  <span>he/him, bisexuals, cis-man.</span><br />
+                  <br />
+                  <span>I can speak in
+                    <span style="color: #e1d1ff"><mark><strong>Vietnamese,
+                          English</strong></mark></span>
+                    and little bit of
+                    <span style="color: #e1d1ff"><mark><strong>Japanese</strong></mark></span>.</span><br />
+                  <br />
+                  <span>I&#39;m a front-end dev and a vocalSynth users, who use
+                    vocalSynth to make covers.</span><br />
+                  <br />
+                  <span>Feel free to talk and chat to me.</span><br />
+                  <br />
+                  <span>( •̀ ω •́ )✧</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr id="dividerStyle" />
+          <ul id="iconsStyle" class="icons">
+            <li>
+              <a class="n01" href="#"><svg>
+                  <use xlink:href="#home-icon"></use>
+                </svg><span class="label">Home</span></a>
+            </li>
+          </ul>
+        </section>
+        <section id="interest-section">
+          <h2 id="text12">
+            <span style="color: #c7e9ff"><strong>Interests</strong></span>
+          </h2>
+          <hr id="dividerStyle" />
+          <div id="container04" class="container columns">
+            <div class="wrapper">
+              <div class="inner">
+                <div>
+                  <p id="text05">
+                    <strong><mark>Music</mark></strong>
+                  </p>
+                  <div id="interestList" class="list">
+                    <ul>
+                      <li>
+                        <p>Vocaloid (of course)</p>
+                      </li>
+                      <li>
+                        <p>Allie X, Marina, Melanie Martinez</p>
+                      </li>
+                      <li>
+                        <p>
+                          ONEWE, MAMAMOO, WJSN, IZ*ONE, and KPop from early
+                          2000s and 2010s
+                        </p>
+                      </li>
+                      <li>
+                        <p>Electronic, EDM music</p>
+                      </li>
+                      <li>
+                        <p>YOASOBI, Merm4id, Roselia, yorushika, yama</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p id="code_text">
+                    <code>You can recommend me some of yours....don&#39;t be
+                            shy</code>
+                  </p>
+                  <p id="text06">
+                    <strong><mark>Anime/Manga</mark></strong>
+                  </p>
+                  <div id="interestList" class="list">
+                    <ul>
+                      <li>
+                        <p>
+                          Romantic BL Manga (yes.....I&#39;m a
+                          <mark><strong>fudanshi</strong></mark>)
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Jujutsu Kaisen, Touken Ranbu Hanamaru (anything
+                          contains comedy, action and rom-com)
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Isekai and reincarnation pilot are my guilty
+                          pleasure lol
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <p id="text08">
+                    <strong><mark>VocalSynth Characters</mark></strong>
+                  </p>
+                  <div id="interestList" class="list">
+                    <ul>
+                      <li>
+                        <p>Hatsune Miku, Zhiyu Moke</p>
+                      </li>
+                      <li>
+                        <p>Eleanor Forte, Chiyu, Haiyi, Muxin, SOLARIA</p>
+                      </li>
+                      <li>
+                        <p>
+                          Utsuho Funnie x Amano Naoki (i love this canon),
+                          Kuno Ohne,
+                        </p>
+                      </li>
+                      <li>
+                        <p>Matsudappoiyo</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p id="text10">
+                    <strong><mark>Gaming</mark></strong>
+                  </p>
+                  <div id="interestList" class="list">
+                    <ul>
+                      <li>
+                        <p>Project Sekai, D4DJ Groove Mix, Bandori</p>
+                      </li>
+                      <li>
+                        <p>Mahjong Soul</p>
+                      </li>
+                      <li>
+                        <p>Arknights, FGO</p>
+                      </li>
+                      <li>
+                        <p>Genshin Impact</p>
+                      </li>
+                      <li>
+                        <p>Leauge Of Legends (not much)</p>
+                      </li>
+                      <li>
+                        <p>Resident Evil Series, Persona Series</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p id="code_text">
+                    <code>I play a lot of rhythms games and willing to try new
+                            games</code>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="dividerStyle" />
+          <ul id="iconsStyle" class="icons">
+            <li>
+              <a class="n01" href="#"><svg>
+                  <use xlink:href="#home-icon"></use>
+                </svg><span class="label">Home</span></a>
+            </li>
+          </ul>
+        </section>
+        <section id="works-section">
+          <div id="container05" class="container default">
+            <div class="wrapper">
+              <div class="inner">
+                <h2 id="text03">
+                  <span style="color: #c7e9ff"><strong>My works</strong></span>
+                </h2>
+                <hr id="dividerStyle" />
+              </div>
+            </div>
+          </div>
+          <p id="myWorks_intro">
+            These are some of my works, check out more on my
+            <a href="https://soundcloud.com/thinh-nguyen-764494794">soundcloud</a>
+            and
+            <a href="https://www.youtube.com/channel/UC8JqeKMGNZ7-DsSYjUjUO2g">youtube</a>.
+          </p>
+          <div id="video01" class="video">
+            <div class="frame">
+              <iframe src=""
+                data-src="https://www.youtube-nocookie.com/embed/tP8QeBNgT_E?autoplay=0&amp;showinfo=0&amp;rel=0&amp;loop=0&amp;controls=1&amp;cc_load_policy=0"
+                allowfullscreen="1"></iframe>
+            </div>
+          </div>
+          <div id="audio01" class="audio">
+            <div class="frame">
+              <iframe
+                data-src="https://w.soundcloud.com/player/?url=http%3A//api.soundcloud.com/tracks/1074458932?show_artwork=true&buying=true&show_comments=true&download=true&liking=true&show_playcount=true&sharing=true&show_user=true&visual=false"></iframe>
+            </div>
+          </div>
+          <hr id="dividerStyle" />
+          <ul id="iconsStyle" class="icons">
+            <li>
+              <a class="n01" href="#"><svg>
+                  <use xlink:href="#home-icon"></use>
+                </svg><span class="label">Home</span></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
